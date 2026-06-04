@@ -92,11 +92,11 @@ async function main() {
       return;
     }
 
-    console.log(`\x1b[34m[3/3]\x1b[0m Sending PR to Gemini AI model (gemini-1.5-flash)...`);
+    console.log(`\x1b[34m[3/3]\x1b[0m Sending PR to Gemini AI model (gemini-3.5-flash)...`);
     
     const genAI = new GoogleGenerativeAI(geminiApiKey);
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-1.5-flash',
+      model: 'gemini-3.5-flash',
       generationConfig: { temperature: 0.2 }
     });
 

@@ -120,9 +120,9 @@ async function run() {
     // 2. Call Gemini API
     core.info('Sending diff to Gemini for review...');
     const genAI = new GoogleGenerativeAI(geminiApiKey);
-    // Use gemini-1.5-flash as default for optimal speed & cost
+    // Use gemini-3.5-flash as default for optimal speed & cost
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-1.5-flash',
+      model: 'gemini-3.5-flash',
       generationConfig: {
         temperature: 0.2, // Lower temperature for more consistent, objective reviews
       }
